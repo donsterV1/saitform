@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+</head>
+<body>
+    <h1>Пожалуйста, заполните анкету</h1>
+    <form method="post" action="/">
+        <label for="name">Введите имя:</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-zА-Яа-яЁё]+" title="Имя должно содержать только буквы." required><br><br>
+
+        <label for="age">Сколько Вам лет?</label>
+        <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+        <label for="university">В каком ВУЗе вы обучаетесь?</label>
+        <input type="text" id="university" name="university" pattern="[A-Za-zА-Яа-яЁё]+" title="Имя должно содержать только буквы." required><br><br>
+
+        <label for="like_university">Нравится ли Вам Ваш ВУЗ?</label>
+        <input type="text" id="like_university" name="like_university" required><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
